@@ -33,7 +33,7 @@ approved → registered`, with off-ramps `no_action_needed`, `rejected`, `failed
 
 ---
 
-## The brief's eight questions
+## Key design questions
 
 ### 1. How the agent detects a missing capability
 `nodes/detect.py`. Two separated questions:

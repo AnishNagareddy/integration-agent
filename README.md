@@ -6,10 +6,10 @@ the web**, **generates a connector (+ an MCP server)**, **validates the generate
 code**, and holds the work as a **ticket that stays pending until a human approves
 it** — twice. Only after approval is the new capability registered and reusable.
 
-> **Scenario (from the brief):** a task requires **Jira**, but there's no Jira
-> connector. The agent detects the gap, researches the Jira REST API, generates
-> integration code, and treats the work as a ticket pending review/approval.
-> Jira is the *demo*, not the product — the agent is general (Stripe, Notion, …).
+> **Example scenario:** a task requires **Jira**, but there's no Jira connector.
+> The agent detects the gap, researches the Jira REST API, generates integration
+> code, and treats the work as a ticket pending review/approval. Jira is just the
+> *demo* — the agent is general (Stripe, Notion, …).
 
 Built on **LangGraph** (the orchestration), **LangChain** (`init_chat_model` →
 model-agnostic reasoning; **Claude** by default), and **SQLite** (catalog +
