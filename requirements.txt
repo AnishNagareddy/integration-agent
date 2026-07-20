@@ -1,0 +1,18 @@
+# Core — LangGraph wiring + storage
+langgraph>=0.2.55
+langgraph-checkpoint-sqlite>=2.0.0   # SqliteSaver: durable pause/resume
+pydantic>=2.7
+pydantic-settings>=2.3               # load config from .env
+sqlmodel>=0.0.22                     # the catalog (SQLite, typed)
+
+# Model-agnostic LLM (Claude for now)
+langchain>=0.3
+langchain-anthropic>=0.3
+
+# Dev
+pytest>=8
+ruff>=0.6
+
+# Added later:
+#   mcp>=1.2       # generated artifact = MCP server
+#   langsmith>=0.1 # tracing + evals

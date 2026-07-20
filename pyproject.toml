@@ -1,0 +1,13 @@
+# Flat layout: code lives directly in this repo root (no nested package).
+# Dependencies are in requirements.txt; this file is just tool config.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]      # so tests can `import state`, `from nodes.detect import ...`
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
